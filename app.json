@@ -1,0 +1,38 @@
+{
+  "id": "f882627f-414c-48d4-a8df-708053b105d8",
+  "name": "TigraCustomizations",
+  "publisher": "Intelice Solutions",
+  "version": "1.0.0.0",
+  "brief": "Tigra Customization",
+  "description": "Customizations from Nav 2009R2",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "http://www.intelice.com",
+  "url": "http://www.intelice.com",
+  "logo": "./logo/logo.jpg",
+  "dependencies": [
+    {
+      "id": "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
+      "publisher": "Microsoft",
+      "name": "System Application",
+      "version": "17.0.0.0"
+    },
+    {
+      "id": "437dbf0e-84ff-417a-965d-ed2bb9650972",
+      "publisher": "Microsoft",
+      "name": "Base Application",
+      "version": "17.0.0.0"
+    }
+  ],
+  "screenshots": [],
+  "platform": "17.0.0.0",
+  "idRanges": [
+    {
+      "from": 50000,
+      "to": 62199
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://TigraProductLine.com/help/",
+  "showMyCode": true,
+  "runtime": "6.0"
+}
