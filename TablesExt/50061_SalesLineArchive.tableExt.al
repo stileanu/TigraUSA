@@ -1,4 +1,4 @@
-tableextension 50051 "Sales Line Extension" extends "Sales Line"
+tableextension 50061 "Sales Line Archive" extends "Sales Line Archive"
 {
     fields
     {
@@ -32,19 +32,10 @@ tableextension 50051 "Sales Line Extension" extends "Sales Line"
         {
             DataClassification = ToBeClassified;
         }
+        field(50009; "Ship Complete"; Boolean)
+        {
+            DataClassification = ToBeClassified;
+        }
     }
 
-    var
-        myInt: Integer;
-
-    /*
-    Enabled	Field No.	Field Name	Data Type	Length	Description
-Yes	50002	Batch No.	Text	20	WC0002
-Yes	50003	Sell-to Customer Name	Text	50	WC0003
-Yes	50004	Qty. Picked	Decimal		WC0004
-Yes	50005	Customer Specific	Boolean		WC0005
-Yes	50006	Order Date	Date		WC0005
-Yes	50007	Initial Ship Qty.	Decimal		WC0006
-Yes	50008	Shipping Hold	Boolean		WC0007
-    */
 }

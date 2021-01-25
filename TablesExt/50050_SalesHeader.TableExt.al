@@ -16,7 +16,7 @@ tableextension 50050 "Sales Header Extension" extends "Sales Header"
         {
             trigger OnAfterValidate()
             begin
-                UpdateSalesLines(FIELDCAPTION("Order Date"), FALSE);   // WC0008
+                UpdateSalesLines(FieldCaption("Order Date"), FALSE);   // WC0008
             end;
         }
     }
