@@ -5,10 +5,11 @@ codeunit 50002 Purch_PostEventSubscriber
 
     end;
 
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post", 'OnAfterCopyItemJnlLineFromPurchLine', '', true, true)]
-    local procedure OnAfterCopyItemJnlLineFromPurchLine(var ItemJnlLine: Record "Item Journal Line"; PurchLine: Record "Purchase Line")
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post", 'OnPostItemJnlLineOnAfterCopyDocumentFields', '', true, true)]
+    local procedure OnPostItemJnlLineOnAfterCopyDocumentFields(var ItemJournalLine: Record "Item Journal Line"; PurchaseLine: Record "Purchase Line";
+                                                                WarehouseReceiptHeader: Record "Warehouse Receipt Header"; WarehouseShipmentHeader: Record "Warehouse Shipment Header")
     begin
-        //ItemJnlLine."RG Number" := PurchLine."RG Number";   // WC0001
+        ItemJournalLine."RG Number" := PurchaseLine."RG Number";   // WC0001
     end;
 
     var
