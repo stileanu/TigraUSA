@@ -1,4 +1,4 @@
-codeunit 50005 WhseActivityPostEvSubscriber
+codeunit 50007 WhseActivityPostEventSubscriber
 {
     trigger OnRun()
     begin
