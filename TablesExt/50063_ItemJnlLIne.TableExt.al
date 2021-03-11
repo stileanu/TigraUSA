@@ -8,6 +8,4 @@ tableextension 50063 "Item Jnl. Line Ext." extends "Item Journal Line"
         }
     }
 
-    var
-        myInt: Integer;
 }

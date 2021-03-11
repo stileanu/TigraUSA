@@ -6,7 +6,7 @@ codeunit 50001 SalesPostEventSubscriber
     end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales-Post", 'OnBeforePostUpdateOrderLineModifyTempLine', '', true, true)]
-    procedure MyProcedure(var TempSalesLine: Record "Sales Line" temporary; WhseShip: Boolean; WhseReceive: Boolean; CommitIsSuppressed: Boolean)
+    local procedure OnBeforePostUpdateOrderLineModifyTempLine(var TempSalesLine: Record "Sales Line" temporary; WhseShip: Boolean; WhseReceive: Boolean; CommitIsSuppressed: Boolean)
     var
         SalesSetup: Record "Sales & Receivables Setup";
         SetDefaultQtyBlank: Boolean;
@@ -49,7 +49,4 @@ codeunit 50001 SalesPostEventSubscriber
             TempSalesLine."Qty. Picked" := 0;    // WC0003
         end;
     end;
-
-    var
-        myInt: Integer;
 }
